@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/38cd5c81f5.js" crossorigin="anonymous"></script></head>
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="header-top flex space-between wrapper">
+            <div class="header-top-left">
+                <span class="hotline">
+                    <span class="hotline-text gray">Hotline:</span>
+                    <span class="hotline-number">(04)33 653 666</span>
+                </span>
+            </div>
+            <div class="header-top-right">
+                <span class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class="fa fa-search"></i>
+                </span>
+                <span class="signup-signin">
+                    <a class="gray" href="http://127.0.0.1:5500/signup.html">Đăng nhập & Đăng ký</a>
+                </span>
+            </div>
+            
+        </div>
+
+        <div class="line-separate"></div>
+
+        <div class="header-bot flex space-between wrapper">
+            <div class="header-bot-left">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/Slider/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header-bot-right">
+                <div class="navbar-heading">
+                    <div>
+                        <ul class="nav">
+                            <li><a href="#">
+                                <i class="fa fa-home"></i>
+                                Trang chủ
+                            </a></li>
+                            <li><a href="#dish-outstanding">
+                                <i class="fa fa-cutlery"></i>
+                                Sản phẩm
+                            </a></li>
+                            <li><a href="#about">
+                                <i class="fa fa-info-circle"></i>
+                                Giới thiệu
+                            </a></li>
+                            <li><a href="#blog">
+                                <i class="fa fa-edit"></i>
+                                Blog
+                            </a></li>
+                            <li><a href="#footer">
+                                <i class="fa fa-phone"></i>
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cart-heading">
+                    <a href="#">
+                        <div class="icon-cart">
+                            <i class="fa fa-shopping-cart cart-heading-content"></i>
+                            <div class="icon-cart-quantity">2</div>
+                        </div>
+                        <div class="cart-heading-text">
+                            <div class="cart-heading-title">GIỎ HÀNG</div>
+                            <div class="cart-heading-quantity">(2) sản phẩm</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+
+    <main id="main">
+        <!-- slider -->
+        <div id="slider" >
+            <div class="slide-border">
+            </div>
+            <img src="/Slider/1.jpg" alt="slider 1">
+        </div>
+
+        <!-- dish outstanding -->
+        <div class="wrapper">
+            <div id="dish-outstanding">
+                <div class="block-heading flex justify-center">
+                    <i class="fa-solid fa-ice-cream icon-main"></i>
+                </div>
+                <div class="block-main flex justify-center mt-8">
+                    <span class="heading-text">
+                        <span class="line-heading">------------------------</span>
+                        <span class="content-heading">MÓN ĂN NỔI BẬT</span>
+                        <span class="line-heading">------------------------</span>
+                    </span>
+                </div>
+                <div class="grid-container-three">
+                    <div class="grid-item-three">
+                        <img class="grid-item-image" src="/Products/12.jpg" alt="">
+                        <div class="flex justify-center block-icons">
+                            <div class="icon-block">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                                <del class="price-origin">180.000đ</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-three">
+                        <img class="grid-item-image" src="/Products/16.jpg" alt="">
+                        <div class="flex justify-center block-icons">
+                            <div class="icon-block">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                                <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-three">
+                            <img class="grid-item-image" src="/Products/6.jpg" alt="">
+                            <div class="flex justify-center block-icons">
+                                <div class="icon-block">
+                                    <i class="fa fa-eye icon-outstanding"></i>
+                                </div>
+                                <div class="icon-block">
+                                    <i class="fas fa-shopping-cart icon-outstanding"></i>
+                                </div>
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-name">Sample Product</div>
+                                <div class="grid-item-price">
+                                    <span>120.000đ</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="surf">
+                    <div class="dot-surf dot-active" onclick="currentSlide(1)"></div>
+                    <div class="dot-surf" onclick="currentSlide(2)"></div>
+                    <div class="dot-surf" onclick="currentSlide(3)"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dish popular -->
+        <div id="dish-popular">
+            <div class="wrapper">
+                <div class="block-heading dish-popular-heading flex justify-center">
+                    <i class="fa-solid fa-ice-cream icon-main"></i>
+                </div>
+                <div class="block-main flex justify-center mt-8">
+                    <span class="heading-text">
+                        <span class="line-heading">------------------------</span>
+                        <span class="content-heading">MÓN ĂN ĐƯỢC ƯA CHUỘNG</span>
+                        <span class="line-heading">------------------------</span>
+                    </span>
+                </div>
+
+                <div class="dish-popular-nav">
+                    <div class="dish-popular-nav-content">
+                        <div class="nav-category" onclick="handleClickCategory(1)">
+                            <span class="nav-category-text">Bánh</span>
+                        </div>
+                        <div class="nav-category category-active" onclick="handleClickCategory(2)">
+                            <span class="nav-category-text">Trà</span>
+                        </div>
+                        <div class="nav-category" onclick="handleClickCategory(3)">
+                            <span class="nav-category-text">Kem tươi</span>
+                        </div>
+                        <div class="nav-category" onclick="handleClickCategory(4)">
+                            <span class="nav-category-text">Cà phê</span>
+                        </div>
+                        <div class="nav-category" onclick="handleClickCategory(5)">
+                            <span class="nav-category-text">Nước ép</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid-container-four">
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/13.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/3.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/9.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/1.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/5.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/17.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/4.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item-four">
+                        <img class="grid-item-image" src="/Products/11.jpg" alt="">
+                        <div class="flex justify-center block-icons-four">
+                            <div class="icon-block-four">
+                                <i class="fa fa-eye icon-outstanding"></i>
+                            </div>
+                            <div class="icon-block-four">
+                                <i class="fas fa-shopping-cart icon-outstanding"></i>
+                            </div>
+                        </div>
+                        <div class="grid-item-content">
+                            <div class="grid-item-name">Sample Product</div>
+                            <div class="grid-item-price">
+                                <span>120.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dish new -->
+        <div id="dish-new">
+            <div class="wrapper">
+                <div class="dish-new-content">
+                    <div class="dish-new-block-heading flex justify-center">
+                        <i class="fa-solid fa-ice-cream icon-main"></i>
+                    </div>
+                    <div class="dish-new-block-main flex justify-center mt-8">
+                        <span class="dish-new-heading-text">
+                            <span class="dish-new-line-heading">------------------------</span>
+                            <span class="dish-new-content-heading">MÓN ĂN MỚI</span>
+                            <span class="dish-new-line-heading">------------------------</span>
+                        </span>
+                    </div>
+
+                    <div class="grid-container-two">
+                        <div class="grid-item-two ">
+                            <div class="sub-grid">
+                                <div class="sub-grid-left">
+                                    <img class="grid-item-image-two" src="/Products/7.jpg" alt="">
+                                </div>
+                                <div class="sub-grid-right">
+                                    <div class="grid-item-content-two">
+                                        <div class="grid-item-content-name">Bánh mousse caramen</div>
+                                        <div class="grid-item-content-price">80.000đ</div>
+                                        <div class="grid-item-content-des">Hãy thử tận hưởng vị ngọt mát béo ngậy thơm lừng 
+                                            của món mousse caramel nhé, bạn sẽ thấy rất thích thú đấy!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-two ">
+                            <div class="sub-grid">
+                                <div class="sub-grid-left">
+                                    <img class="grid-item-image-two" src="/Products/8.jpg" alt="">
+                                </div>
+                                <div class="sub-grid-right">
+                                    <div class="grid-item-content-two">
+                                        <div class="grid-item-content-name">Bánh mousse caramen</div>
+                                        <div class="grid-item-content-price">80.000đ</div>
+                                        <div class="grid-item-content-des">Hãy thử tận hưởng vị ngọt mát béo ngậy thơm lừng 
+                                            của món mousse caramel nhé, bạn sẽ thấy rất thích thú đấy!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-two ">
+                            <div class="sub-grid">
+                                <div class="sub-grid-left">
+                                    <img class="grid-item-image-two" src="/Products/2.jpg" alt="">
+                                </div>
+                                <div class="sub-grid-right">
+                                    <div class="grid-item-content-two">
+                                        <div class="grid-item-content-name">Bánh mousse caramen</div>
+                                        <div class="grid-item-content-price">80.000đ</div>
+                                        <div class="grid-item-content-des">Hãy thử tận hưởng vị ngọt mát béo ngậy thơm lừng 
+                                            của món mousse caramel nhé, bạn sẽ thấy rất thích thú đấy!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-two ">
+                            <div class="sub-grid">
+                                <div class="sub-grid-left">
+                                    <img class="grid-item-image-two" src="/Products/18.jpg" alt="">
+                                </div>
+                                <div class="sub-grid-right">
+                                    <div class="grid-item-content-two">
+                                        <div class="grid-item-content-name">Bánh mousse caramen</div>
+                                        <div class="grid-item-content-price">80.000đ</div>
+                                        <div class="grid-item-content-des">Hãy thử tận hưởng vị ngọt mát béo ngậy thơm lừng 
+                                            của món mousse caramel nhé, bạn sẽ thấy rất thích thú đấy!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- blog -->
+        <div class="wrapper">
+            <div id="blog">
+                <div class="block-heading flex justify-center">
+                    <i class="fa-solid fa-ice-cream icon-main icon-blog"></i>
+                </div>
+                <div class="block-main flex justify-center mt-8">
+                    <span class="heading-text">
+                        <span class="line-heading">------------------------</span>
+                        <span class="content-heading">BLOG</span>
+                        <span class="line-heading">------------------------</span>
+                    </span>
+                </div>
+                <div class="grid-container-three">
+                    <div class="grid-item-three_blog">
+                        <img class="grid-item-image_blog" src="/Products/1.jpg" alt="">
+                        <div class="grid-item-content_blog">
+                            <div class="blog-content">Chia sẻ</div>
+                            <div class="blog-des">Các cách bảo quản kem siêu tiện lợi ngay tại nhà cho bạn</div>
+                            <div class="blog-detail">Xem chi tiết</div>
+                        </div>
+                    </div>
+                    <div class="grid-item-three_blog">
+                        <img class="grid-item-image_blog" src="/Products/15.jpg" alt="">
+                        <div class="grid-item-content_blog">
+                            <div class="blog-content">Chia sẻ</div>
+                            <div class="blog-des">Cách làm sinh tố cầu vồng nhiều màu sắc giàu dinh dưỡng</div>
+                            <div class="blog-detail">Xem chi tiết</div>
+                        </div>
+                    </div>
+                    <div class="grid-item-three_blog">
+                        <img class="grid-item-image_blog" src="/Products/11.jpg" alt="">
+                        <div class="grid-item-content_blog">
+                            <div class="blog-content">Chia sẻ</div>
+                            <div class="blog-des">Cách làm bánh kem lạnh cực ngon cực lạ mà siêu đẹp mắt</div>
+                            <div class="blog-detail">Xem chi tiết</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about">
+            <div class="wrapper2">
+                <div class="grid-container-two_about">
+                    <div class="grid-item-two_about">
+                        <img class="grid-item-image-two_blog" src="/Products/about.png" alt="">
+
+                    </div>
+                    <div class="grid-item-two_about">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/Slider/logo.png" alt="logo_about">
+                            </a>
+                        </div>
+                        <div class="about-content">
+                            Được khởi xướng và vận hành bởi một nhóm người trẻ năng động,
+                            cửa hàng bánh ngọt và đồ uống DELICIOUS đang dần khẳng định 
+                            chỗ đứng trong thị trường đồ ăn giải khát phong phú và đa dạng ở 
+                            Hà Nội. Hướng tới đối tượng khách hàng là các bạn trẻ năng động, 
+                            chúng tôi luôn quan tâm tới chất lượng và hình ảnh của sản phẩm.
+                        </div>
+                        <div class="about-more">Đọc thêm</div>
+                        <div class="about-line">-----------------------------------------------------------------------------------------------</div>
+                        <div class="about-connect flex">
+                            <div class="about-connect-text">Kết nối với chúng tôi:</div>
+                            <div class="about-connect-icon">
+                                <a href="https://www.facebook.com">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.google.com">
+                                    <i class="fa-brands fa-google-plus"></i>
+                                </a>
+                                <a href="https://www.youtube.com">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service -->
+        <div id="service">
+            <div class="wrapper">
+                <div class="grid-container-three_service">
+                    <div class="grid-item-three_service">
+                        <div class="service-icon-block">
+                            <div class="service-icon-border">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">Chuyển phát nhanh</div>
+                            <div class="service-des">Chúng tôi miễn phí với đơn hàng trên 
+                                350.000đ tại Hà Nội và free ship 
+                                toàn quốc với đơn hàng 700.000đ</div>
+                        </div>
+                    </div>
+                    <div class="grid-item-three_service">
+                        <div class="service-icon-block">
+                            <div class="service-icon-border">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">Làm bánh theo yêu cầu</div>
+                            <div class="service-des">Một chiếc bánh được thiết kế riêng biệt, độc đáo
+                                dành cho người thân, bạn bè chắc hẳn sẽ là một
+                                món quà bất ngờ và đặc biệt nhất.</div>
+                        </div>
+                    </div>
+                    <div class="grid-item-three_service">
+                        <div class="service-icon-block">
+                            <div class="service-icon-border">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">Hỗ trợ khách hàng</div>
+                            <div class="service-des">Trung tâm chăm sóc khách hàng của 
+                                DELICIOUS, hotline (04)33 653 666 
+                                để được hỗ trợ giải đáp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="wrapper">
+                    <div class="grid-container-four">
+                        <div class="grid-item-four_footer">
+                            <div class="grid-item-content-four">
+                                <div class="content-title">Liên hệ</div>
+                                <div class="content-des">
+                                    <ul>
+                                        <li><a href="#" class="flex">
+                                            <div><i class="fa-solid fa-location-dot content-icon"></i></div>
+                                            <div class="footer-text">Tầng 4 - Tòa nhà Hanoi Group, 442 Đội Cấn, Ba Đình, Hà Nội</div>
+                                        </a></li>
+                                        <li><a href="#" class="flex">
+                                            <div><i class="fa-solid fa-phone content-icon"></i></div>
+                                            <div>
+                                                <div class="footer-text">(04) 6674 2332</div>
+                                                <div class="footer-text">Thứ 2 - Chủ nhật: 9:00 - 18:00</div>
+                                            </div>
+                                        </a></li>
+                                        <li><a href="#" class="flex">
+                                            <i class="fa-solid fa-envelope content-icon"></i>
+                                            <div class="footer-text mail">support@bizweb.vn</div>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-four_footer">
+                            <div class="grid-item-content-four">
+                                <div class="content-title">Hỗ trợ khách hàng</div>
+                                <div class="content-des">
+                                    <ul class="ul-styled">
+                                        <li><a href="#" class="footer-text">Liên hệ và góp ý</a></li>
+                                        <li><a href="#" class="footer-text">Hướng dẫn mua hàng</a></li>
+                                        <li><a href="#" class="footer-text">Hướng dẫn trả góp</a></li>
+                                        <li><a href="#" class="footer-text">Quy chế hoạt động</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-four_footer">
+                            <div class="grid-item-content-four">
+                                <div class="content-title">Chính sách mua hàng</div>
+                                <div class="content-des">
+                                    <ul class="ul-styled">
+                                        <li><a href="#" class="footer-text">Chính sách bảo mật</a></li>
+                                        <li><a href="#" class="footer-text">Chính sách đổi trả</a></li>
+                                        <li><a href="#" class="footer-text">Giao nhanạ & Thanh toán</a></li>
+                                        <li><a href="#" class="footer-text">Chính sách hội viên</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-four_footer">
+                            <div class="grid-item-content-four">
+                                <div class="content-title">Đăng ký nhận tin</div>
+                                <div class="content-des">
+                                    <div class="footer-text">
+                                        Đăng ký nhận thôn tin khuyến mãi và món ăn mới
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Email của bạn">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="wrapper flex space-between">
+                    <div class="footer-bot-left">
+                        <div class="license">
+                            <div class="footer-text">
+                                <i class="fa-regular fa-circle-user"></i>
+                                Bản quyền thuộc về 
+                                <a href="#" class="">DELICIOUS</a> 
+                                . Phát triển bởi 
+                                <a href="#" class="">Bizweb</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bot-right">
+                        <nav class="nav-footer">
+                            <ul>
+                                <li><a href="#" class="footer-text">Trang chủ</a></li>
+                                <li><a href="#about" class="footer-text">Giới thiệu</a></li>
+                                <li><a href="#dish-outstanding" class="footer-text">Sản phẩm</a></li>
+                                <li><a href="#blog" class="footer-text">Blog</a></li>
+                                <li><a href="#footer" class="footer-text">Liên hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+    
+        function showSlides(n) {
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            updateDots();
+        }
+    
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot-surf');
+            dots.forEach((dot, index) => {
+                if (index + 1 === slideIndex) {
+                dot.classList.add('dot-active');
+                } else {
+                dot.classList.remove('dot-active');
+                }
+            });
+        }
+        showSlides(slideIndex);
+
+        function handleClickCategory(index) {
+            const categories = document.querySelectorAll('.nav-category');
+            categories.forEach(category => {
+                category.classList.remove('category-active');
+            });
+
+            const clickedCategory = document.querySelector(`.nav-category:nth-child(${index})`);
+            clickedCategory.classList.add('category-active');
+        }
+    </script>
+
+</body>
+</html>
